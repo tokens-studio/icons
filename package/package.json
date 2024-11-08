@@ -26,15 +26,12 @@
 		"lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:types",
 		"lint:eslint": "eslint .",
 		"lint:prettier": "prettier . --check",
-		"lint:types": "tsc --noEmit",
-		"release": "npm run regenerate && npm run build && changeset publish",
-		"changeset": "changeset"
+		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
 		"react": "^18.3.1"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.27.9",
 		"@svgr/cli": "^8.0.1",
 		"@tokens-studio/configs": "^0.2.3",
 		"eslint": "^9.11.1",
