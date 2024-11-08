@@ -1,0 +1,30 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgTimerOff = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		xmlns='http://www.w3.org/2000/svg'
+		width={16}
+		height={16}
+		fill='none'
+		aria-hidden={!title}
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+			strokeWidth={1.5}
+			d='M6 1.333h4M3.333 4.667l9.334 9.666M8 6.667v2.666M4.127 5.667a5.333 5.333 0 0 0 7.367 7.696m1.452-2.03a5.333 5.333 0 0 0-6.806-7'
+		/>
+	</svg>
+);
+export default SvgTimerOff;
