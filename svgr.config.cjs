@@ -13,6 +13,19 @@ function indexTemplate(filePaths) {
 	return exportEntries;
 }
 
+const removeStrokeWidth = (ast) => {
+	if (ast.children) {
+		ast.children.forEach((child) => {
+			if (child.name === 'path') {
+				delete child.attributes['stroke-width'];
+			}
+			if (child.children) {
+				removeStrokeWidth(child);
+			}
+		});
+	}
+};
+
 module.exports = {
 	template,
 	titleProp: true,
@@ -23,12 +36,27 @@ module.exports = {
 	replaceAttrValues: {
 		'#000': 'currentColor',
 		'#000000': 'currentColor',
+		black: 'currentColor',
+	},
+	svgoConfig: {
+		plugins: [
+			{
+				name: 'customPlugin',
+				params: {
+					paramName: 'paramValue',
+				},
+				fn: (ast) => {
+					removeStrokeWidth(ast);
+				},
+			},
+		],
 	},
 	svgProps: {
 		'aria-hidden': '{!title}',
 		width: '{props.width || 16}',
 		height: '{props.height || 16}',
-		strokeWidth: '{props.strokeWidth || 1.5}',
+		strokeWidth:
+			'{props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}',
 		preserveAspectRatio: 'xMidYMid meet',
 		viewBox: '0 0 16 16',
 	},
