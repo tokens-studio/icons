@@ -1,5 +1,11 @@
 # @tokens-studio/icons
 
+## 0.1.1
+
+### Patch Changes
+
+- 0bca042: Added support for width, height, strokeWidth prop
+
 ## 0.1.0
 
 ### Minor Changes
