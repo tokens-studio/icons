@@ -1,5 +1,11 @@
 # @tokens-studio/icons
 
+## 0.1.3
+
+### Patch Changes
+
+- 8edc1a9: Allow direct import of icons to decrease reliance on treeshaking
+
 ## 0.1.2
 
 ### Patch Changes
