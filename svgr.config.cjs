@@ -1,10 +1,11 @@
+const path = require('path');
 const template = require('./svgr-template.cjs');
 
 // Custom index template to handle file endings as required
 function indexTemplate(filePaths) {
 	const exportEntries = filePaths
 		.map(({ path: filePath }) => {
-			const fileName = filePath.split('/').pop().replace('.tsx', '.js');
+			const fileName = filePath.split(path.sep).pop().replace('.tsx', '.js');
 			const componentName = fileName.replace('.js', '');
 			return `export { default as ${componentName} } from './${fileName}';`;
 		})
