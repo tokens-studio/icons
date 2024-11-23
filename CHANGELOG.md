@@ -1,5 +1,11 @@
 # @tokens-studio/icons
 
+## 0.1.4
+
+### Patch Changes
+
+- 924d067: Fixes icon size of some icons that were clipped as being exported in wrong dimensions
+
 ## 0.1.3
 
 ### Patch Changes
