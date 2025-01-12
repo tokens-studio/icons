@@ -1,0 +1,49 @@
+{
+	"private": false,
+	"name": "@tokens-studio/icons",
+	"version": "0.1.4",
+	"description": "Tokens Studio: Internal icon library",
+	"author": "jan@hyma.io",
+	"type": "module",
+	"exports": {
+		"./*": {
+			"import": "./dist/icons/*",
+			"types": "./dist/icons/*"
+		},
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsc && npm run format:prettier",
+		"clean": "rm -rf src/icons && rm -rf dist",
+		"dev": "tsc --watch",
+		"regenerate": "npm run clean && npm run svgr",
+		"svgr": "svgr --config-file svgr.config.cjs assets",
+		"format": "npm run format:eslint && npm run format:prettier",
+		"format:eslint": "eslint . --fix",
+		"format:prettier": "prettier . --write",
+		"lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:types",
+		"lint:eslint": "eslint .",
+		"lint:prettier": "prettier . --check",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.9",
+		"@svgr/cli": "^8.0.1",
+		"@tokens-studio/configs": "^0.2.3",
+		"eslint": "^9.11.1",
+		"prettier": "^3.3.3",
+		"typescript": "^5.6.2"
+	}
+}

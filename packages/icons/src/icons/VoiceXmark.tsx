@@ -1,0 +1,62 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgVoiceXmark = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 16 16'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M8 2V12.6667'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M5.33325 5.33325V9.33325'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M13.3333 6V8.66667'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M2.66675 6V8.66667'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M10.6667 4V9.33333'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M10.7476 14.2428L12.1618 12.8286M12.1618 12.8286L13.576 11.4143M12.1618 12.8286L10.7476 11.4143M12.1618 12.8286L13.576 14.2428'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
+export default SvgVoiceXmark;

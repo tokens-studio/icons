@@ -1,0 +1,54 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgStatsReport = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 16 16'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M6.66667 6H4'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M10.3333 7.33333C9.41283 7.33333 8.66663 6.58714 8.66663 5.66667C8.66663 4.74619 9.41283 4 10.3333 4C11.2538 4 12 4.74619 12 5.66667C12 6.58714 11.2538 7.33333 10.3333 7.33333Z'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M4 4H6'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M12 12.0001L9 10.0001L7.33333 11.3334L4 8.66675'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M2 13.6V2.4C2 2.17909 2.17909 2 2.4 2H13.6C13.8209 2 14 2.17909 14 2.4V13.6C14 13.8209 13.8209 14 13.6 14H2.4C2.17909 14 2 13.8209 2 13.6Z'
+			stroke='currentColor'
+		/>
+	</svg>
+);
+export default SvgStatsReport;

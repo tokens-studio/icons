@@ -1,0 +1,61 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgWindowLock = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 16 16'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M9.33337 14H2.66671C1.93033 14 1.33337 13.4031 1.33337 12.6667V3.33333C1.33337 2.59695 1.93033 2 2.66671 2H13.3334C14.0698 2 14.6667 2.59695 14.6667 3.33333V8.66667'
+			stroke='currentColor'
+			strokeLinecap='round'
+		/>
+		<path
+			d='M1.33337 4.66675H14.6667'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M3.33337 3.33993L3.34004 3.33252'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M5.33337 3.33993L5.34004 3.33252'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M7.33337 3.33993L7.34004 3.33252'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M14.1112 12.3333H14.2667C14.4876 12.3333 14.6667 12.5124 14.6667 12.7333V14.2667C14.6667 14.4876 14.4876 14.6667 14.2667 14.6667H11.7334C11.5124 14.6667 11.3334 14.4876 11.3334 14.2667V12.7333C11.3334 12.5124 11.5124 12.3333 11.7334 12.3333H11.8889M14.1112 12.3333V11.1667C14.1112 10.7778 13.8889 10 13 10C12.1112 10 11.8889 10.7778 11.8889 11.1667V12.3333M14.1112 12.3333H11.8889'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
+export default SvgWindowLock;
