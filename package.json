@@ -9,7 +9,9 @@
 		"dev": "npm run dev -w @tokens-studio/preview",
 		"dev:all": "npm run dev --workspaces --if-present",
 		"clean": "npm run clean --workspaces --if-present",
-		"release": "npm run build && changeset publish"
+		"changeset": "changeset",
+		"version": "changeset version",
+		"release": "changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.9"
