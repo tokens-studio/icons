@@ -1,7 +1,14 @@
-<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 4.33333V3.33333C3 2.59695 3.59695 2 4.33333 2H11.7811C12.1347 2 12.4738 2.14047 12.7239 2.39053L14.6095 4.27614C14.8595 4.52619 15 4.86533 15 5.21895V12.6667C15 13.4031 14.4031 14 13.6667 14H4.33333C3.59695 14 3 13.4031 3 12.6667V11.6667" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.33337 2H11.6667V5.6C11.6667 5.82091 11.4876 6 11.2667 6H6.73337C6.51246 6 6.33337 5.82091 6.33337 5.6V2Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13 14V9.06669C13 8.84575 12.8209 8.66669 12.6 8.66669H11" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5 14V11.6667" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.99996 8H1.66663M1.66663 8L3.66663 6M1.66663 8L3.66663 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_4874)">
+<path d="M2 4.33333V3.33333C2 2.59695 2.59695 2 3.33333 2H10.7811C11.1347 2 11.4738 2.14047 11.7239 2.39053L13.6095 4.27614C13.8595 4.52619 14 4.86533 14 5.21895V12.6667C14 13.4031 13.4031 14 12.6667 14H3.33333C2.59695 14 2 13.4031 2 12.6667V11.6667" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.33337 2H10.6667V5.6C10.6667 5.82091 10.4876 6 10.2667 6H5.73337C5.51246 6 5.33337 5.82091 5.33337 5.6V2Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 14V9.06669C12 8.84575 11.8209 8.66669 11.6 8.66669H10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 14V11.6667" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.99996 8H0.666626M0.666626 8L2.66663 6M0.666626 8L2.66663 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_1_4874">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
 </svg>
