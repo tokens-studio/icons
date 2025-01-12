@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tokens-studio/icons": "workspace:*",
+    "@tokens-studio/icons": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

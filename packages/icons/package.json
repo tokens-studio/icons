@@ -21,19 +21,19 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "tsc && pnpm run format:prettier",
+		"build": "tsc && npm run format:prettier",
 		"clean": "rm -rf src/icons && rm -rf dist",
 		"dev": "tsc --watch",
-		"regenerate": "pnpm run clean && pnpm run svgr",
+		"regenerate": "npm run clean && npm run svgr",
 		"svgr": "svgr --config-file svgr.config.cjs assets",
-		"format": "pnpm run format:eslint && pnpm run format:prettier",
+		"format": "npm run format:eslint && npm run format:prettier",
 		"format:eslint": "eslint . --fix",
 		"format:prettier": "prettier . --write",
-		"lint": "pnpm run lint:prettier && pnpm run lint:eslint && pnpm run lint:types",
+		"lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:types",
 		"lint:eslint": "eslint .",
 		"lint:prettier": "prettier . --check",
 		"lint:types": "tsc --noEmit",
-		"release": "pnpm run regenerate && pnpm run build && changeset publish"
+		"release": "npm run regenerate && npm run build && changeset publish"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"
