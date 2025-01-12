@@ -1,0 +1,44 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgBatteryIndicator = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 16 16'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M9.33337 8.66666H10.6667H12'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M4 8.66668H5.33333M5.33333 8.66668H6.66667M5.33333 8.66668V7.33334M5.33333 8.66668V10'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M4.00004 4.66668H1.73337C1.51246 4.66668 1.33337 4.84576 1.33337 5.06668V12.2667C1.33337 12.4876 1.51246 12.6667 1.73337 12.6667H14.2667C14.4876 12.6667 14.6667 12.4876 14.6667 12.2667V5.06668C14.6667 4.84576 14.4876 4.66668 14.2667 4.66668H12M4.00004 4.66668V3.33334H5.33337V4.66668M4.00004 4.66668H5.33337M12 4.66668V3.33334H10.6667V4.66668M12 4.66668H10.6667M5.33337 4.66668H10.6667'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
+export default SvgBatteryIndicator;

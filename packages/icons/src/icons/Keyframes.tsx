@@ -1,0 +1,44 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgKeyframes = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 16 16'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M9.23169 8.87803L6.33672 12.1866C5.80551 12.7937 4.86107 12.7937 4.32986 12.1866L1.43488 8.87803C0.995015 8.37537 0.995015 7.6247 1.43488 7.12203L4.32986 3.81349C4.86107 3.20638 5.80551 3.20638 6.33672 3.81348L9.23169 7.12203C9.67156 7.6247 9.67156 8.37537 9.23169 8.87803Z'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M8.66675 12.6667L11.923 8.86777C12.3509 8.36844 12.3509 7.63164 11.923 7.13231L8.66675 3.33337'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M11.3333 12.6667L14.5895 8.86777C15.0175 8.36844 15.0175 7.63164 14.5895 7.13231L11.3333 3.33337'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
+export default SvgKeyframes;
