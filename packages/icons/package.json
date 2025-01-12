@@ -1,8 +1,9 @@
 {
+	"private": false,
 	"name": "@tokens-studio/icons",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "Tokens Studio: Internal icon library",
-	"author": "six7@hyma.io",
+	"author": "jan@hyma.io",
 	"type": "module",
 	"exports": {
 		"./*": {
