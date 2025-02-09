@@ -1,8 +1,8 @@
 {
   "framework": "vite",
-  "buildCommand": "npm install && npm run build --workspace @tokens-studio/preview",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "installCommand": "echo 'Skipping install'",
+  "installCommand": "npm ci",
   "routes": [
     {
       "src": "/(.*)",
