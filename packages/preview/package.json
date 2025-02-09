@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:icons && vite build",
+    "build:icons": "cd ../icons && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
