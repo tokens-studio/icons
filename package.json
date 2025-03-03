@@ -6,6 +6,7 @@
 	],
 	"scripts": {
 		"build": "npm run build --workspaces --if-present",
+		"regenerate": "npm run regenerate --workspaces --if-present",
 		"dev": "npm run dev -w @tokens-studio/preview",
 		"dev:all": "npm run dev --workspaces --if-present",
 		"clean": "npm run clean --workspaces --if-present",
