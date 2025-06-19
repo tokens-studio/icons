@@ -1,20 +1,58 @@
 {
-	"name": "@tokens-studio/monorepo",
-	"private": true,
-	"workspaces": [
-		"packages/*"
+	"name": "@tokens-studio/icons",
+	"version": "0.1.6",
+	"description": "Tokens Studio: Internal icon library",
+	"author": "jan@hyma.io",
+	"type": "module",
+	"exports": {
+		"./*": {
+			"import": "./dist/icons/*",
+			"types": "./dist/icons/*"
+		},
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
-		"build": "npm run build --workspaces --if-present",
-		"regenerate": "npm run regenerate --workspaces --if-present",
-		"dev": "npm run dev -w @tokens-studio/preview",
-		"dev:all": "npm run dev --workspaces --if-present",
-		"clean": "npm run clean --workspaces --if-present",
+		"build": "npm run generate && tsc && vite build",
+		"clean": "rm -rf src/icons && rm -rf dist",
+		"dev": "concurrently \"tsc --watch\" \"vite\"",
+		"generate": "npm run clean && node generate-enum.js && svgr --silent --config-file svgr.config.cjs assets && prettier . --write --log-level=warn ",
+		"format": "npm run format:eslint && npm run format:prettier",
+		"format:eslint": "eslint . --fix",
+		"format:prettier": "prettier . --write --list-different",
+		"lint": "run-p lint:*",
+		"lint:eslint": "eslint .",
+		"lint:types": "tsc --noEmit",
 		"changeset": "changeset",
-		"version": "changeset version",
-		"release": "changeset publish"
+		"release": "changeset publish",
+		"version": "changeset version && npm i"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.27.9"
+		"@changesets/cli": "^2.29.4",
+		"@svgr/cli": "^8.1.0",
+		"@tokens-studio/configs": "^0.2.3",
+		"@types/react": "^18.2.43",
+		"@types/react-dom": "^18.2.17",
+		"@vitejs/plugin-react": "^4.5.2",
+		"change-case": "^5.4.4",
+		"concurrently": "^9.1.2",
+		"eslint": "^9.29.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^3.5.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"typescript": "^5.8.3",
+		"vite": "^6.3.5"
 	}
 }
