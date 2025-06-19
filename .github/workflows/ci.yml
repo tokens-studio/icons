@@ -23,5 +23,8 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Generate icons and enum
+        run: npm run generate
+
       - name: Linting & Formatting
         run: npm run lint
