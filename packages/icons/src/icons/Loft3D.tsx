@@ -21,24 +21,31 @@ const SvgLoft3D = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M14.6666 12.3334C8.66658 12.3334 7.33325 16.3333 1.33325 16.3333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M14.6666 1.66663C8.66658 1.66663 7.33325 5.66656 1.33325 5.66656'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M7.99992 12V6M7.99992 12L9.66659 10.3333M7.99992 12L6.33325 10.3333M7.99992 6L9.66659 7.66667M7.99992 6L6.33325 7.66667'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_3704)'>
+			<path
+				d='M14.6666 11.3334C8.66658 11.3334 7.33325 15.3333 1.33325 15.3333'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M14.6666 0.666626C8.66658 0.666626 7.33325 4.66656 1.33325 4.66656'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M7.99992 11V5M7.99992 11L9.66659 9.33333M7.99992 11L6.33325 9.33333M7.99992 5L9.66659 6.66667M7.99992 5L6.33325 6.66667'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_3704'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgLoft3D;

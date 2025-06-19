@@ -21,36 +21,43 @@ const SvgPrecisionTool = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M8 4V5.33333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M8 10.6666V12'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M5.33333 8H4'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M12 8H10.6666'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M8.00004 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8.00004C14.6667 4.31814 11.6819 1.33337 8.00004 1.33337C4.31814 1.33337 1.33337 4.31814 1.33337 8.00004C1.33337 11.6819 4.31814 14.6667 8.00004 14.6667Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_2327)'>
+			<path
+				d='M8 4V5.33333'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M8 10.6666V12'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M5.33333 8H4'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M12 8H10.6666'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M8.00004 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8.00004C14.6667 4.31814 11.6819 1.33337 8.00004 1.33337C4.31814 1.33337 1.33337 4.31814 1.33337 8.00004C1.33337 11.6819 4.31814 14.6667 8.00004 14.6667Z'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_2327'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgPrecisionTool;

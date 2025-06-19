@@ -21,12 +21,19 @@ const SvgRhombus = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M7.71712 0.949552C7.87332 0.793346 8.12659 0.793346 8.28285 0.949552L15.0505 7.71718C15.2067 7.87338 15.2067 8.12665 15.0505 8.28291L8.28285 15.0505C8.12665 15.2067 7.87338 15.2068 7.71712 15.0505L0.949491 8.28291C0.793285 8.12671 0.793285 7.87345 0.949491 7.71718L7.71712 0.949552Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_2069)'>
+			<path
+				d='M7.71712 0.949552C7.87332 0.793346 8.12659 0.793346 8.28285 0.949552L15.0505 7.71718C15.2067 7.87338 15.2067 8.12665 15.0505 8.28291L8.28285 15.0505C8.12665 15.2067 7.87338 15.2068 7.71712 15.0505L0.949491 8.28291C0.793285 8.12671 0.793285 7.87345 0.949491 7.71718L7.71712 0.949552Z'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_2069'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgRhombus;

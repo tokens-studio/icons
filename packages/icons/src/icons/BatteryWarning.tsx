@@ -21,28 +21,35 @@ const SvgBatteryWarning = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M16.3334 6.66666V9.33332'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M1.66663 10.6667V5.33333C1.66663 4.59695 2.26358 4 2.99996 4H13C13.7364 4 14.3333 4.59695 14.3333 5.33333V10.6667C14.3333 11.4031 13.7364 12 13 12H2.99996C2.26358 12 1.66663 11.4031 1.66663 10.6667Z'
-			stroke='currentColor'
-		/>
-		<path
-			d='M8 6V7.33333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M8 10.0067L8.00667 9.99927'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_7456)'>
+			<path
+				d='M15.3334 6.66666V9.33332'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M0.666626 10.6667V5.33333C0.666626 4.59695 1.26358 4 1.99996 4H12C12.7364 4 13.3333 4.59695 13.3333 5.33333V10.6667C13.3333 11.4031 12.7364 12 12 12H1.99996C1.26358 12 0.666626 11.4031 0.666626 10.6667Z'
+				stroke='currentColor'
+			/>
+			<path
+				d='M7 6V7.33333'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M7 10.0067L7.00667 9.99927'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_7456'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgBatteryWarning;

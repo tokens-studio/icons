@@ -21,18 +21,25 @@ const SvgEthereumCircle = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M4.66675 7.99998L8.00008 12.6666L11.3334 7.99998M4.66675 7.99998L8.00008 3.33331M4.66675 7.99998L8.00008 8.66665M11.3334 7.99998L8.00008 3.33331M11.3334 7.99998L8.00008 8.66665M8.00008 3.33331V8.66665'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M7.99992 14.6666C4.31802 14.6666 1.33325 11.6818 1.33325 7.99998C1.33325 4.31808 4.31802 1.33331 7.99992 1.33331C11.6818 1.33331 14.6666 4.31808 14.6666 7.99998C14.6666 11.6818 11.6818 14.6666 7.99992 14.6666Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_5258)'>
+			<path
+				d='M4.66675 7.99998L8.00008 12.6666L11.3334 7.99998M4.66675 7.99998L8.00008 3.33331M4.66675 7.99998L8.00008 8.66665M11.3334 7.99998L8.00008 3.33331M11.3334 7.99998L8.00008 8.66665M8.00008 3.33331V8.66665'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M7.99992 14.6666C4.31802 14.6666 1.33325 11.6818 1.33325 7.99998C1.33325 4.31808 4.31802 1.33331 7.99992 1.33331C11.6818 1.33331 14.6666 4.31808 14.6666 7.99998C14.6666 11.6818 11.6818 14.6666 7.99992 14.6666Z'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_5258'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgEthereumCircle;

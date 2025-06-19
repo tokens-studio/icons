@@ -40,13 +40,13 @@ const SvgDataTransferWarning = ({
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M13.3333 10.6667V12'
+			d='M11.3333 10.6667V12'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M13.3333 14.6734L13.34 14.666'
+			d='M11.3267 14.6734L11.3333 14.666'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

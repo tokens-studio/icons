@@ -21,24 +21,31 @@ const SvgBatterySlash = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M3 2L15 14'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M16.3334 6.66666V9.33332'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M4.66663 4H2.99996C2.26358 4 1.66663 4.59695 1.66663 5.33333V10.6667C1.66663 11.4031 2.26358 12 2.99996 12H12.6666M14.3333 9.66667V5.33333C14.3333 4.59695 13.7364 4 13 4H8.66663'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_7461)'>
+			<path
+				d='M2 2L14 14'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M15.3334 6.66666V9.33332'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M3.66663 4H1.99996C1.26358 4 0.666626 4.59695 0.666626 5.33333V10.6667C0.666626 11.4031 1.26358 12 1.99996 12H11.6666M13.3333 9.66667V5.33333C13.3333 4.59695 12.7364 4 12 4H7.66663'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_7461'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgBatterySlash;

@@ -1,0 +1,20 @@
+{
+	"$schema": "https://turborepo.com/schema.json",
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build", "regenerate"],
+			"outputs": ["dist/**"]
+		},
+		"dev": {
+			"dependsOn": ["regenerate"],
+			"persistent": true,
+			"cache": false
+		},
+		"regenerate": {
+			"outputs": ["src/icons/**"]
+		},
+		"lint": {
+			"dependsOn": ["regenerate"]
+		}
+	}
+}

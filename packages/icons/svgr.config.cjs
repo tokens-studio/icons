@@ -1,5 +1,5 @@
 const path = require('path');
-const template = require('./svgr-template.cjs');
+const prettierConfig = require('@tokens-studio/configs/prettier').default;
 
 // Custom index template to handle file endings as required
 function indexTemplate(filePaths) {
@@ -28,10 +28,10 @@ const removeStrokeWidth = (ast) => {
 };
 
 module.exports = {
-	template,
+	// template: require("./svgr-template.cjs"),
 	titleProp: true,
 	typescript: true,
-	prettier: false,
+	prettier: prettierConfig,
 	outDir: 'src/icons',
 	jsxRuntime: 'automatic',
 	replaceAttrValues: {

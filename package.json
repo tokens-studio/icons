@@ -1,20 +1,25 @@
 {
-	"name": "@tokens-studio/monorepo",
-	"private": true,
-	"workspaces": [
-		"packages/*"
-	],
-	"scripts": {
-		"build": "npm run build --workspaces --if-present",
-		"regenerate": "npm run regenerate --workspaces --if-present",
-		"dev": "npm run dev -w @tokens-studio/preview",
-		"dev:all": "npm run dev --workspaces --if-present",
-		"clean": "npm run clean --workspaces --if-present",
-		"changeset": "changeset",
-		"version": "changeset version",
-		"release": "changeset publish"
-	},
-	"devDependencies": {
-		"@changesets/cli": "^2.27.9"
-	}
+  "name": "@tokens-studio/monorepo",
+  "private": true,
+  "packageManager": "npm@11.4.2",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "clean": "turbo clean",
+    "dev": "turbo dev",
+    "regenerate": "turbo regenerate",
+    "lint": "turbo lint && prettier . --check",
+    "format": "prettier . --write --list-different",
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "version": "changeset version && npm i"
+  },
+  "devDependencies": {
+    "@tokens-studio/configs": "^0.2.3",
+    "@changesets/cli": "^2.27.9",
+    "turbo": "^2.5.4",
+    "prettier": "^3.5.3"
+  }
 }

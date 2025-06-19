@@ -21,29 +21,36 @@ const SvgSendMail = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M7 6L10 8L13 6'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M3 9H4.33333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M1.66663 7H4.33329'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M4.33337 5.00004V4.66671C4.33337 3.93033 4.93033 3.33337 5.66671 3.33337H14.3334C15.0698 3.33337 15.6667 3.93033 15.6667 4.66671V11.3334C15.6667 12.0698 15.0698 12.6667 14.3334 12.6667H5.66671C4.93033 12.6667 4.33337 12.0698 4.33337 11.3334V11'
-			stroke='currentColor'
-			strokeLinecap='round'
-		/>
+		<g clipPath='url(#clip0_1_1726)'>
+			<path
+				d='M6 6L9 8L12 6'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M2 9H3.33333'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M0.666626 7H3.33329'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M3.33337 5.00004V4.66671C3.33337 3.93033 3.93033 3.33337 4.66671 3.33337H13.3334C14.0698 3.33337 14.6667 3.93033 14.6667 4.66671V11.3334C14.6667 12.0698 14.0698 12.6667 13.3334 12.6667H4.66671C3.93033 12.6667 3.33337 12.0698 3.33337 11.3334V11'
+				stroke='currentColor'
+				strokeLinecap='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_1726'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgSendMail;

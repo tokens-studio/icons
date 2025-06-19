@@ -21,32 +21,47 @@ const SvgNpm = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M1.66663 5.33337H16.3333V10H8.33329V11.3334H5.99996V10H1.66663V5.33337Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M6 5.33337V10'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M10 5.33337V10'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path d='M13 7.33337V10' stroke='currentColor' strokeLinecap='round' />
-		<path d='M4.33337 7.33337V10' stroke='currentColor' strokeLinecap='round' />
-		<path
-			d='M8.33337 7.33337V8.00004'
-			stroke='currentColor'
-			strokeLinecap='round'
-		/>
-		<path d='M14.6666 7.33337V10' stroke='currentColor' strokeLinecap='round' />
+		<g clipPath='url(#clip0_1_3043)'>
+			<path
+				d='M0.666626 5.33337H15.3333V10H7.33329V11.3334H4.99996V10H0.666626V5.33337Z'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M5 5.33337V10'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M9 5.33337V10'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path d='M12 7.33337V10' stroke='currentColor' strokeLinecap='round' />
+			<path
+				d='M3.33337 7.33337V10'
+				stroke='currentColor'
+				strokeLinecap='round'
+			/>
+			<path
+				d='M7.33337 7.33337V8.00004'
+				stroke='currentColor'
+				strokeLinecap='round'
+			/>
+			<path
+				d='M13.6666 7.33337V10'
+				stroke='currentColor'
+				strokeLinecap='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_3043'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgNpm;

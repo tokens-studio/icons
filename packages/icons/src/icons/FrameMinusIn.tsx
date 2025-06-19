@@ -21,68 +21,75 @@ const SvgFrameMinusIn = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M3.33219 1.33331H1.33325V3.33225H3.33219V1.33331Z'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M3.33228 2.33368H12.6657'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M2.33325 3.33203V12.6667'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M13.6653 3.33301V12.6677'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M3.33228 13.667H12.6657'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M3.33219 12.6667H1.33325V14.6656H3.33219V12.6667Z'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M14.6649 1.33398H12.666V3.33292H14.6649V1.33398Z'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M14.6649 12.6674H12.666V14.6663H14.6649V12.6674Z'
-			stroke='currentColor'
-			strokeMiterlimit={1.5}
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M6 8H10'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_4765)'>
+			<path
+				d='M3.33219 1.33331H1.33325V3.33225H3.33219V1.33331Z'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M3.33228 2.33368H12.6657'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M2.33325 3.33203V12.6667'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M13.6653 3.33301V12.6677'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M3.33228 13.667H12.6657'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M3.33219 12.6667H1.33325V14.6656H3.33219V12.6667Z'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M14.6649 1.33398H12.666V3.33292H14.6649V1.33398Z'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M14.6649 12.6674H12.666V14.6663H14.6649V12.6674Z'
+				stroke='currentColor'
+				strokeMiterlimit={1.5}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M6 8H10'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_4765'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgFrameMinusIn;

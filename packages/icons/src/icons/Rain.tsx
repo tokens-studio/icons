@@ -21,36 +21,43 @@ const SvgRain = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M9 9.33337V10.6667'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M9 13.3334V14.6667'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M6.33325 12V13.3333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M11.6667 12V13.3333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M14.3334 11.7382C15.3292 11.3481 16.3334 10.4593 16.3334 8.66671C16.3334 6.00004 14.1112 5.33337 13.0001 5.33337C13.0001 4.00004 13.0001 1.33337 9.00008 1.33337C5.00008 1.33337 5.00008 4.00004 5.00008 5.33337C3.88897 5.33337 1.66675 6.00004 1.66675 8.66671C1.66675 10.4593 2.67093 11.3481 3.66675 11.7382'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_2201)'>
+			<path
+				d='M8 9.33337V10.6667'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M8 13.3334V14.6667'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M5.33325 12V13.3333'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M10.6667 12V13.3333'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M13.3334 11.7382C14.3292 11.3481 15.3334 10.4593 15.3334 8.66671C15.3334 6.00004 13.1112 5.33337 12.0001 5.33337C12.0001 4.00004 12.0001 1.33337 8.00008 1.33337C4.00008 1.33337 4.00008 4.00004 4.00008 5.33337C2.88897 5.33337 0.666748 6.00004 0.666748 8.66671C0.666748 10.4593 1.67093 11.3481 2.66675 11.7382'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_2201'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgRain;

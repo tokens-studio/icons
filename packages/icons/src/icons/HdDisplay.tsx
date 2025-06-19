@@ -21,22 +21,29 @@ const SvgHdDisplay = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M5 5.66663V7.99996M5 7.99996V10.3333M5 7.99996H8M8 7.99996V5.66663M8 7.99996V10.3333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M10.3333 7.99996V5.66663C12 5.66663 13.6666 5.66663 13.6666 7.99996C13.6666 10.3333 12 10.3333 10.3333 10.3333V7.99996Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M1.66669 10V6C1.66669 3.79086 3.45755 2 5.66669 2H12.3334C14.5425 2 16.3334 3.79086 16.3334 6V10C16.3334 12.2091 14.5425 14 12.3334 14H5.66669C3.45755 14 1.66669 12.2091 1.66669 10Z'
-			stroke='currentColor'
-		/>
+		<g clipPath='url(#clip0_1_4378)'>
+			<path
+				d='M4 5.66663V7.99996M4 7.99996V10.3333M4 7.99996H7M7 7.99996V5.66663M7 7.99996V10.3333'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M9.33331 7.99996V5.66663C11 5.66663 12.6666 5.66663 12.6666 7.99996C12.6666 10.3333 11 10.3333 9.33331 10.3333V7.99996Z'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M0.666687 10V6C0.666687 3.79086 2.45755 2 4.66669 2H11.3334C13.5425 2 15.3334 3.79086 15.3334 6V10C15.3334 12.2091 13.5425 14 11.3334 14H4.66669C2.45755 14 0.666687 12.2091 0.666687 10Z'
+				stroke='currentColor'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_4378'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgHdDisplay;

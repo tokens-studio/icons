@@ -21,24 +21,31 @@ const SvgPriorityHigh = ({
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M7.71718 0.949552C7.87338 0.793346 8.12665 0.793346 8.28291 0.949552L15.0505 7.71718C15.2067 7.87338 15.2068 8.12665 15.0505 8.28291L8.28291 15.0505C8.12671 15.2067 7.87345 15.2068 7.71718 15.0505L0.949552 8.28291C0.793346 8.12671 0.793346 7.87345 0.949552 7.71718L7.71718 0.949552Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M8 5.33337V8.00004'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M8 10.6733L8.00667 10.6659'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
+		<g clipPath='url(#clip0_1_2298)'>
+			<path
+				d='M7.71718 0.949552C7.87338 0.793346 8.12665 0.793346 8.28291 0.949552L15.0505 7.71718C15.2067 7.87338 15.2068 8.12665 15.0505 8.28291L8.28291 15.0505C8.12671 15.2067 7.87345 15.2068 7.71718 15.0505L0.949552 8.28291C0.793346 8.12671 0.793346 7.87345 0.949552 7.71718L7.71718 0.949552Z'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M8 5.33337V8.00004'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M8 10.6733L8.00667 10.6659'
+				stroke='currentColor'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_1_2298'>
+				<rect width={16} height={16} fill='white' />
+			</clipPath>
+		</defs>
 	</svg>
 );
 export default SvgPriorityHigh;
