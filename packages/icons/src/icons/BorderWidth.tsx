@@ -9,38 +9,35 @@ const SvgBorderWidth = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 16 16'
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
-		<rect
-			x={1.91382}
-			y={1.91666}
-			width={12.1582}
-			height={1.5}
-			fill='currentColor'
+		<path
+			d='M21 5.5H3'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 		/>
-		<rect
-			x={1.91382}
-			y={6.04587}
-			width={12.1582}
-			height={2.5}
-			fill='currentColor'
+		<path
+			d='M3 10.5H21V11.5H3V10.5Z'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 		/>
-		<rect
-			x={1.91382}
-			y={11.1751}
-			width={12.1582}
-			height={3.5}
-			fill='currentColor'
+		<path
+			d='M3 18.5H21V16.5H3V18.5Z'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 		/>
 	</svg>
 );

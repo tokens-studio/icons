@@ -9,20 +9,20 @@ const SvgCheck = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 16 16'
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M3.33334 8.66669L6.00001 11.3334L12.6667 4.66669'
+			d='M20 6L9 17L4 12'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

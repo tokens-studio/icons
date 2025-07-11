@@ -9,26 +9,20 @@ const SvgTrash = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 16 16'
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M13.3334 6L12.0034 13.5642C11.8913 14.2017 11.3375 14.6667 10.6902 14.6667H5.30985C4.66255 14.6667 4.10875 14.2017 3.99666 13.5642L2.66669 6'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M14 3.99992H10.25M10.25 3.99992V2.66659C10.25 1.93021 9.65307 1.33325 8.91667 1.33325H7.08333C6.34695 1.33325 5.75 1.93021 5.75 2.66659V3.99992M10.25 3.99992H5.75M2 3.99992H5.75'
+			d='M16 6V5.2C16 4.0799 16 3.51984 15.782 3.09202C15.5903 2.71569 15.2843 2.40973 14.908 2.21799C14.4802 2 13.9201 2 12.8 2H11.2C10.0799 2 9.51984 2 9.09202 2.21799C8.71569 2.40973 8.40973 2.71569 8.21799 3.09202C8 3.51984 8 4.0799 8 5.2V6M10 11.5V16.5M14 11.5V16.5M3 6H21M19 6V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

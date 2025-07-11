@@ -1,0 +1,32 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgReinvite = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M2 7L7.194 10.463C7.494 10.663 7.644 10.763 7.805 10.833C7.949 10.896 8.1 10.941 8.255 10.969C8.429 11 8.609 11 8.969 11H15.031C15.391 11 15.571 11 15.745 10.969C15.9 10.941 16.051 10.896 16.195 10.833C16.357 10.763 16.506 10.663 16.806 10.463L22 7M22 11V8.8C22 7.12 22 6.28 21.673 5.638C21.3854 5.07354 20.9265 4.61462 20.362 4.327C19.72 4 18.88 4 17.2 4H6.8C5.12 4 4.28 4 3.638 4.327C3.07354 4.61462 2.61462 5.07354 2.327 5.638C2 6.28 2 7.12 2 8.8V15.2C2 16.88 2 17.72 2.327 18.362C2.61462 18.9265 3.07354 19.3854 3.638 19.673C4.28 20 5.12 20 6.8 20H12M15.15 16.497C15.3733 15.7503 15.8394 15.0995 16.4745 14.6477C17.1096 14.196 17.8773 13.9691 18.656 14.0031C19.4346 14.0371 20.1796 14.33 20.7729 14.8354C21.3662 15.3408 21.7738 16.0298 21.9312 16.7931C22.0886 17.5564 21.9866 18.3504 21.6416 19.0493C21.2966 19.7481 20.7281 20.3118 20.0264 20.651C19.3247 20.9901 18.5299 21.0854 17.7679 20.9216C17.0059 20.7579 16.3204 20.3445 15.82 19.747M15.15 16.497H16.6M15.15 16.497H14.6V14.497'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
+export default SvgReinvite;

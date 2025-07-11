@@ -9,70 +9,59 @@ const SvgBorderStyle = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 16 16'
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M13.3333 13.34L13.34 13.3326'
+			d='M21 6H3'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M10.6667 13.34L10.6733 13.3326'
+			d='M21 12H3'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+			strokeDasharray='4 4'
+		/>
+		<path
+			d='M21 17.9889L20.99 18'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M8 13.34L8.00667 13.3326'
+			d='M16.5024 17.9889L16.4924 18'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M5.33334 13.34L5.34001 13.3326'
+			d='M12.005 17.9889L11.995 18'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M2.66666 13.34L2.67332 13.3326'
+			d='M7.50744 17.9889L7.49744 18'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M2.66666 2.66667H13.3333'
+			d='M3.01 17.9889L3 18'
 			stroke='currentColor'
-			strokeLinecap='square'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M11.8333 8.0074L13.3333 8'
-			stroke='currentColor'
-			strokeLinecap='square'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M7.25 8.0074L8.75 8'
-			stroke='currentColor'
-			strokeLinecap='square'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M2.66669 8.0074L4.16669 8'
-			stroke='currentColor'
-			strokeLinecap='square'
+			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 	</svg>

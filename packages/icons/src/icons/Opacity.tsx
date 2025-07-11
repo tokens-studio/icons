@@ -9,24 +9,40 @@ const SvgOpacity = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 16 16'
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			fillRule='evenodd'
-			clipRule='evenodd'
-			d='M9.46933 4.36256C10.11 4.36804 10.7222 4.49252 11.2851 4.71497C11.5075 5.27781 11.632 5.89007 11.6375 6.53071L9.46933 4.36256ZM7.66292 4.67747C7.2705 4.82318 6.90105 5.01615 6.56148 5.24948L10.7506 9.43856C10.9839 9.09899 11.1769 8.72954 11.3226 8.33712L7.66292 4.67747ZM9.72737 10.5367L5.46335 6.27267C5.21128 6.58904 4.99632 6.93627 4.82503 7.3078L8.69224 11.175C9.06377 11.0037 9.41101 10.7888 9.72737 10.5367ZM7.01473 11.6188L4.38123 8.98531C4.36876 9.13023 4.3624 9.27689 4.3624 9.42504C4.3624 9.91631 4.43237 10.3912 4.5629 10.8404L5.15964 11.4371C5.6088 11.5677 6.08373 11.6376 6.575 11.6376C6.72315 11.6376 6.86981 11.6313 7.01473 11.6188ZM6.575 0.0122986C9.12161 0.0122986 11.3294 1.4628 12.4174 3.58269C14.5372 4.67062 15.9877 6.87844 15.9877 9.42504C15.9877 13.0495 13.0495 15.9877 9.42507 15.9877C6.87847 15.9877 4.67065 14.5372 3.58272 12.4173C1.46283 11.3294 0.0123291 9.12158 0.0123291 6.57497C0.0123291 2.95051 2.95054 0.0122986 6.575 0.0122986ZM14.4877 9.42504C14.4877 8.08048 13.9636 6.85834 13.1085 5.95181C13.1278 6.15693 13.1377 6.3648 13.1377 6.57497C13.1377 10.1994 10.1995 13.1376 6.575 13.1376C6.36483 13.1376 6.15696 13.1278 5.95184 13.1084C6.85837 13.9636 8.08051 14.4877 9.42507 14.4877C12.2211 14.4877 14.4877 12.2211 14.4877 9.42504Z'
-			fill='currentColor'
+			d='M11.9966 20.9998C16.9672 20.9998 20.9966 16.9703 20.9966 11.9998C20.9966 7.02919 16.9672 2.99976 11.9966 2.99976C7.02608 2.99976 2.99664 7.02919 2.99664 11.9998C2.99664 16.9703 7.02608 20.9998 11.9966 20.9998Z'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 		/>
+		<path d='M9.50997 16H9.51997V16.01H9.50997V16Z' stroke='currentColor' />
+		<path d='M17.51 8H17.52V8.01H17.51V8Z' stroke='currentColor' />
+		<path d='M17.51 12H17.52V12.01H17.51V12Z' stroke='currentColor' />
+		<path d='M19.51 10H19.52V10.01H19.51V10Z' stroke='currentColor' />
+		<path d='M13.51 12H13.52V12.01H13.51V12Z' stroke='currentColor' />
+		<path d='M15.51 10H15.52V10.01H15.51V10Z' stroke='currentColor' />
+		<path d='M15.51 14H15.52V14.01H15.51V14Z' stroke='currentColor' />
+		<path d='M11.51 14H11.52V14.01H11.51V14Z' stroke='currentColor' />
+		<path d='M13.5 16H13.51V16.01H13.5V16Z' stroke='currentColor' />
+		<path d='M9.50997 19.99H9.51997V20H9.50997V19.99Z' stroke='currentColor' />
+		<path d='M7.5 17.99H7.51V18H7.5V17.99Z' stroke='currentColor' />
+		<path d='M11.51 18H11.52V18.01H11.51V18Z' stroke='currentColor' />
+		<path d='M15.5 18H15.51V18.01H15.5V18Z' stroke='currentColor' />
+		<path d='M13.52 20H13.53V20.01H13.52V20Z' stroke='currentColor' />
+		<path d='M17.52 16.01H17.53V16.02H17.52V16.01Z' stroke='currentColor' />
+		<path d='M19.52 14.01H19.53V14.02H19.52V14.01Z' stroke='currentColor' />
 	</svg>
 );
 export default SvgOpacity;

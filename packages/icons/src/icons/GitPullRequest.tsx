@@ -9,50 +9,20 @@ const SvgGitPullRequest = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 16 16'
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M12 14C12.7364 14 13.3334 13.4031 13.3334 12.6667C13.3334 11.9303 12.7364 11.3334 12 11.3334C11.2636 11.3334 10.6667 11.9303 10.6667 12.6667C10.6667 13.4031 11.2636 14 12 14Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M4.00002 4.66667C4.7364 4.66667 5.33335 4.06971 5.33335 3.33333C5.33335 2.59695 4.7364 2 4.00002 2C3.26364 2 2.66669 2.59695 2.66669 3.33333C2.66669 4.06971 3.26364 4.66667 4.00002 4.66667Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M4.00002 14C4.7364 14 5.33335 13.4031 5.33335 12.6667C5.33335 11.9303 4.7364 11.3334 4.00002 11.3334C3.26364 11.3334 2.66669 11.9303 2.66669 12.6667C2.66669 13.4031 3.26364 14 4.00002 14Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M4 4.66663V11.3333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M12 11.3334V4.66671C12 4.66671 12 3.33337 10.6667 3.33337H8.66669'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M10.0003 5.00008L8.33368 3.33341L10.0003 1.66675'
+			d='M18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15ZM18 15V8C18 7.46957 17.7893 6.96086 17.4142 6.58579C17.0391 6.21071 16.5304 6 16 6H13M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

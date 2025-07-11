@@ -1,0 +1,38 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgFileDynamic = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 24}
+		height={props.height || 24}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M14.001 2.26916V6.3997C14.001 6.95975 14.001 7.23977 14.11 7.45369C14.2059 7.64185 14.3588 7.79483 14.547 7.8907C14.7609 7.99969 15.0409 7.99969 15.601 7.99969H19.501H19.7315C19.6808 7.88814 19.6231 7.77965 19.5589 7.67484C19.3734 7.37209 19.114 7.11266 18.5951 6.59381L15.4069 3.40558C14.888 2.88673 14.6286 2.6273 14.3258 2.44177C14.0574 2.27729 13.7648 2.15608 13.4587 2.08259C13.1134 1.99969 12.7465 1.99969 12.0128 1.99969H8.80099C7.12083 1.99969 6.28076 1.99969 5.63902 2.32668C5.07453 2.6143 4.61559 3.07324 4.32797 3.63772C4.00099 4.27946 4.00099 5.11954 4.00099 6.7997V17.1997C4.00099 18.8799 4.00099 19.7199 4.32797 20.3617C4.61559 20.9262 5.07453 21.3851 5.63902 21.6727C6.12703 21.9214 6.72975 21.9809 7.72939 21.9952'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+		<path
+			d='M18.001 13.5005H17.501C15.0157 13.5005 13.001 15.5152 13.001 18.0005M13.001 18.0005C11.8965 18.0005 11.001 18.8943 11.001 19.9989C11.001 21.1035 11.8967 22 13.0011 22C14.1056 22 15.001 21.1046 15.001 20C15.001 18.8954 14.1055 18.0005 13.001 18.0005ZM18 13.4991C18 14.6037 18.8957 15.5002 20.0002 15.5002C21.1046 15.5002 22 14.6048 22 13.5002C22 12.3957 21.1046 11.5002 20.0002 11.5002C18.8957 11.5002 18 12.3946 18 13.4991Z'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
+export default SvgFileDynamic;

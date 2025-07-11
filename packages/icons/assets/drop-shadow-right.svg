@@ -1,0 +1,4 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M17 20H20C20.5464 20 21.0587 19.8539 21.5 19.5987M17 4H20C20.5464 4 21.0587 4.14609 21.5 4.40135M21.5 19.5987C22.3967 19.0799 23 18.1104 23 17V7C23 5.88958 22.3967 4.92006 21.5 4.40135M21.5 19.5987V4.40135" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<rect x="4" y="4" width="16" height="16" rx="3" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+</svg>
