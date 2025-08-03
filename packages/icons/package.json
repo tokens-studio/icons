@@ -34,7 +34,7 @@
 		"lint:eslint": "eslint .",
 		"lint:prettier": "prettier . --check",
 		"lint:types": "tsc --noEmit",
-		"release:canary": "changeset version && changeset publish --tag canary"
+		"release:canary": "npm publish --tag canary"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"

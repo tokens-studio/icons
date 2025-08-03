@@ -3,7 +3,7 @@ interface SVGRProps {
 	title?: string;
 	titleId?: string;
 }
-const SvgSearchMdFilled = ({
+const SvgSearchFilled = ({
 	title,
 	titleId,
 	...props
@@ -29,4 +29,4 @@ const SvgSearchMdFilled = ({
 		/>
 	</svg>
 );
-export default SvgSearchMdFilled;
+export default SvgSearchFilled;
