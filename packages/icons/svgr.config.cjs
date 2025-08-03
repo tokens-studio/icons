@@ -54,10 +54,10 @@ module.exports = {
 	},
 	svgProps: {
 		'aria-hidden': '{!title}',
-		width: '{props.width || 24}',
-		height: '{props.height || 24}',
+		width: '{props.width || 16}',
+		height: '{props.height || 16}',
 		strokeWidth:
-			'{props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}',
+			'{props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}',
 		preserveAspectRatio: 'xMidYMid meet',
 		viewBox: '0 0 24 24',
 	},
