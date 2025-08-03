@@ -1,0 +1,44 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgLink01Filled = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M16.2071 7.79287C16.5977 8.1834 16.5977 8.81656 16.2071 9.20709L9.20713 16.2071C8.81661 16.5976 8.18344 16.5976 7.79292 16.2071C7.40239 15.8166 7.40239 15.1834 7.79292 14.7929L14.7929 7.79287C15.1834 7.40235 15.8166 7.40235 16.2071 7.79287Z'
+			fill='currentColor'
+		/>
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M6.34317 10.5858C6.7337 10.9763 6.7337 11.6095 6.34317 12L4.92896 13.4142C3.36686 14.9763 3.36686 17.509 4.92896 19.0711C6.49106 20.6332 9.02372 20.6332 10.5858 19.0711L12 17.6569C12.3905 17.2663 13.0237 17.2663 13.4142 17.6569C13.8048 18.0474 13.8048 18.6805 13.4142 19.0711L12 20.4853C9.65688 22.8284 5.85789 22.8284 3.51474 20.4853C1.1716 18.1421 1.1716 14.3431 3.51475 12L4.92896 10.5858C5.31948 10.1953 5.95265 10.1953 6.34317 10.5858Z'
+			fill='currentColor'
+		/>
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M12 3.51472C14.3432 1.17158 18.1422 1.17158 20.4853 3.51472C22.8285 5.85787 22.8285 9.65686 20.4853 12L19.0711 13.4142C18.6806 13.8047 18.0474 13.8047 17.6569 13.4142C17.2664 13.0237 17.2664 12.3905 17.6569 12L19.0711 10.5858C20.6332 9.02369 20.6332 6.49103 19.0711 4.92894C17.509 3.36684 14.9763 3.36684 13.4142 4.92894L12 6.34315C11.6095 6.73367 10.9763 6.73367 10.5858 6.34315C10.1953 5.95262 10.1953 5.31946 10.5858 4.92894L12 3.51472Z'
+			fill='currentColor'
+		/>
+	</svg>
+);
+export default SvgLink01Filled;

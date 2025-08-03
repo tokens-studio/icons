@@ -1,0 +1,39 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgAlignHorizontalCenterFilled = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			opacity={0.5}
+			d='M11 21V3C11 2.44772 11.4477 2 12 2C12.5523 2 13 2.44772 13 3V21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21Z'
+			fill='currentColor'
+		/>
+		<path
+			d='M19 13.5C19.9665 13.5 20.75 14.2835 20.75 15.25V16.25C20.75 17.2165 19.9665 18 19 18H5C4.0335 18 3.25 17.2165 3.25 16.25V15.25C3.25 14.2835 4.0335 13.5 5 13.5H19Z'
+			fill='currentColor'
+		/>
+		<path
+			d='M15 6C15.9665 6 16.75 6.7835 16.75 7.75V8.75C16.75 9.7165 15.9665 10.5 15 10.5H9C8.0335 10.5 7.25 9.7165 7.25 8.75V7.75C7.25 6.7835 8.0335 6 9 6H15Z'
+			fill='currentColor'
+		/>
+	</svg>
+);
+export default SvgAlignHorizontalCenterFilled;

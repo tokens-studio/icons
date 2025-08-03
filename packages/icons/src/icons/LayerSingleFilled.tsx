@@ -1,0 +1,32 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgLayerSingleFilled = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M11.7234 6.08474C11.9062 6.05045 12.0938 6.05045 12.2766 6.08474C12.493 6.12535 12.6861 6.22388 12.7794 6.27149C12.789 6.2764 12.7976 6.28076 12.805 6.28446L22.4472 11.1056C22.786 11.275 23 11.6212 23 12C23 12.3788 22.786 12.725 22.4472 12.8944L12.805 17.7155C12.7976 17.7193 12.789 17.7236 12.7794 17.7285C12.6861 17.7761 12.493 17.8747 12.2766 17.9153C12.0938 17.9496 11.9062 17.9496 11.7234 17.9153C11.507 17.8747 11.3139 17.7761 11.2206 17.7285C11.211 17.7236 11.2024 17.7192 11.195 17.7155L1.55279 12.8944C1.214 12.725 1 12.3788 1 12C1 11.6212 1.214 11.275 1.55279 11.1056L11.195 6.28446C11.2024 6.28076 11.211 6.27639 11.2206 6.27149C11.3139 6.22388 11.507 6.12535 11.7234 6.08474Z'
+			fill='currentColor'
+		/>
+	</svg>
+);
+export default SvgLayerSingleFilled;

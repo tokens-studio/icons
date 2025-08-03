@@ -9,13 +9,13 @@ const SvgAlignBottom = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 24}
-		height={props.height || 24}
+		width={props.width || 16}
+		height={props.height || 16}
 		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
@@ -29,11 +29,7 @@ const SvgAlignBottom = ({
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M8.25 4.5H8.75C9.16421 4.5 9.5 4.83579 9.5 5.25V15.25C9.5 15.6642 9.16421 16 8.75 16H8.25M8.25 4.5H7.75C7.33579 4.5 7 4.83579 7 5.25V15.25C7 15.6642 7.33579 16 7.75 16H8.25M8.25 4.5V16'
-			stroke='currentColor'
-		/>
-		<path
-			d='M15.75 10.5H16.25C16.6642 10.5 17 10.8358 17 11.25V15.25C17 15.6642 16.6642 16 16.25 16H15.75M15.75 10.5H15.25C14.8358 10.5 14.5 10.8358 14.5 11.25V15.25C14.5 15.6642 14.8358 16 15.25 16H15.75M15.75 10.5V16'
+			d='M8.25 4.5H8.75C9.16421 4.5 9.5 4.83579 9.5 5.25V15.25C9.5 15.6642 9.16421 16 8.75 16H8.25M8.25 4.5H7.75C7.33579 4.5 7 4.83579 7 5.25V15.25C7 15.6642 7.33579 16 7.75 16H8.25M8.25 4.5V16M15.75 10.5H16.25C16.6642 10.5 17 10.8358 17 11.25V15.25C17 15.6642 16.6642 16 16.25 16H15.75M15.75 10.5H15.25C14.8358 10.5 14.5 10.8358 14.5 11.25V15.25C14.5 15.6642 14.8358 16 15.25 16H15.75M15.75 10.5V16'
 			stroke='currentColor'
 		/>
 	</svg>

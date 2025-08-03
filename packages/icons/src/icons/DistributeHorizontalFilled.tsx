@@ -1,0 +1,40 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgDistributeHorizontalFilled = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			opacity={0.5}
+			d='M3 21V3C3 2.44772 3.44772 2 4 2C4.55228 2 5 2.44772 5 3V21C5 21.5523 4.55228 22 4 22C3.44772 22 3 21.5523 3 21Z'
+			fill='currentColor'
+		/>
+		<path
+			opacity={0.5}
+			d='M19 21V3C19 2.44772 19.4477 2 20 2C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21Z'
+			fill='currentColor'
+		/>
+		<path
+			d='M12.5 18.75C13.4665 18.75 14.25 17.9665 14.25 17V7C14.25 6.0335 13.4665 5.25 12.5 5.25H11.5C10.5335 5.25 9.75 6.0335 9.75 7V17L9.75879 17.1787C9.8483 18.0613 10.5938 18.75 11.5 18.75H12.5Z'
+			fill='currentColor'
+		/>
+	</svg>
+);
+export default SvgDistributeHorizontalFilled;

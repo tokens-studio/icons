@@ -2,7 +2,7 @@ import { useState } from 'react'
 import * as Icons from '@tokens-studio/icons'
 
 function App() {
-  const [size, setSize] = useState(24)
+  const [size, setSize] = useState(16)
   const [search, setSearch] = useState('')
   
   const handleSizeChange = (e) => {

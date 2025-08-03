@@ -9,13 +9,13 @@ const SvgGeneric = ({
 	...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
 	<svg
-		width={props.width || 24}
-		height={props.height || 24}
+		width={props.width || 16}
+		height={props.height || 16}
 		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (24 / (Number(props.width) || 24))}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
@@ -34,7 +34,7 @@ const SvgGeneric = ({
 			strokeLinejoin='round'
 		/>
 		<path
-			d='M17.5005 20.9995C19.4335 20.9995 21.0006 19.4325 21.0006 17.4995C21.0006 15.5665 19.4335 13.9995 17.5005 13.9995C15.5676 13.9995 14.0005 15.5665 14.0005 17.4995C14.0005 19.4325 15.5676 20.9995 17.5005 20.9995Z'
+			d='M17.5005 20.9995C19.4335 20.9995 21.0005 19.4325 21.0005 17.4995C21.0005 15.5665 19.4335 13.9995 17.5005 13.9995C15.5676 13.9995 14.0005 15.5665 14.0005 17.4995C14.0005 19.4325 15.5676 20.9995 17.5005 20.9995Z'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

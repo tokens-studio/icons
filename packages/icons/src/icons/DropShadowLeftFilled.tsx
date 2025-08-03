@@ -1,0 +1,35 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgDropShadowLeftFilled = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			opacity={0.4}
+			d='M7 3V5H4C3.82675 5 3.65944 5.0225 3.5 5.06348V18.9355C3.65951 18.9766 3.82666 19 4 19H7V21H4C3.36391 21 2.76041 20.8507 2.22461 20.585L1.99902 20.4639C0.806227 19.7737 0 18.4817 0 17V7C0 5.51832 0.806227 4.22629 1.99902 3.53613L2.22461 3.41504C2.76041 3.14932 3.36391 3 4 3H7Z'
+			fill='currentColor'
+		/>
+		<path
+			d='M19 7C19 5.89543 18.1046 5 17 5H7C5.89543 5 5 5.89543 5 7V17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17V7ZM21 17C21 19.2091 19.2091 21 17 21H7C4.79086 21 3 19.2091 3 17V7C3 4.79086 4.79086 3 7 3H17C19.2091 3 21 4.79086 21 7V17Z'
+			fill='currentColor'
+		/>
+	</svg>
+);
+export default SvgDropShadowLeftFilled;

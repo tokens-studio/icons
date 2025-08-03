@@ -1,0 +1,38 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgCaseSmallCapsFilled = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M18.5 9.00008C20.0193 9.00008 21.2861 10.2123 21.2861 11.7501C21.2861 12.239 21.1561 12.6943 20.9326 13.0889C21.5787 13.5893 22 14.3648 22 15.2501C21.9999 16.7878 20.7331 18.0001 19.2138 18.0001H15.9999C15.4477 18 15 17.5523 14.9999 17.0001V10.0001L15.0048 9.89754C15.0562 9.39344 15.4823 9.00012 15.9999 9.00008H18.5ZM16.9999 16.0001H19.2138C19.6669 16.0001 19.9999 15.6453 20 15.2501C20 14.8548 19.6669 14.5001 19.2138 14.5001H16.9999V16.0001ZM16.9999 12.5001H18.5C18.953 12.5001 19.286 12.1453 19.2861 11.7501C19.2861 11.3548 18.953 11.0001 18.5 11.0001H16.9999V12.5001Z'
+			fill='currentColor'
+		/>
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M7.49702 5.795C7.82219 5.67924 8.1777 5.67926 8.50288 5.795L8.66304 5.86238L8.79292 5.93563C9.07704 6.11963 9.23517 6.38083 9.31733 6.52547C9.42282 6.7112 9.53119 6.9522 9.63862 7.18856L13.9101 16.586L13.9482 16.6807C14.1104 17.161 13.8854 17.6959 13.414 17.9102C12.9428 18.1244 12.392 17.9426 12.1367 17.505L12.0898 17.4132L10.538 14.0001H5.46186L3.91011 17.4132L3.86323 17.505C3.60786 17.9426 3.05712 18.1244 2.58589 17.9102C2.08329 17.6816 1.8613 17.0887 2.08979 16.586L6.36128 7.18856L6.52241 6.83797C6.5761 6.72506 6.62981 6.61836 6.68257 6.52547C6.77645 6.36019 6.96995 6.04321 7.33686 5.86238L7.49702 5.795ZM6.37007 12.0001H9.62983L7.99995 8.41512L6.37007 12.0001Z'
+			fill='currentColor'
+		/>
+	</svg>
+);
+export default SvgCaseSmallCapsFilled;
