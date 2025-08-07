@@ -1,7 +1,7 @@
 {
 	"private": false,
 	"name": "@tokens-studio/assets",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Tokens Studio: Internal asset library",
 	"author": "jan@hyma.io",
 	"type": "module",
