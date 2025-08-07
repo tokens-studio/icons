@@ -1,8 +1,8 @@
 {
 	"private": false,
-	"name": "@tokens-studio/icons",
-	"version": "1.0.0-canary.3",
-	"description": "Tokens Studio: Internal icon library",
+	"name": "@tokens-studio/assets",
+	"version": "0.0.1",
+	"description": "Tokens Studio: Internal asset library",
 	"author": "jan@hyma.io",
 	"type": "module",
 	"exports": {
