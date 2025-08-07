@@ -3,7 +3,7 @@ interface SVGRProps {
 	title?: string;
 	titleId?: string;
 }
-const SvgCss = ({
+const SvgSortUp = ({
 	title,
 	titleId,
 	...props
@@ -22,11 +22,11 @@ const SvgCss = ({
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M7.99999 7.04626H16L8.44444 11.332H15.5555L15.1111 16.0939L12 17.0463L8.88888 16.0939L8.7111 14.1891M5.64719 3.04626H18.3528C19.2365 3.04626 19.9287 3.8064 19.8462 4.68628L18.6248 17.7147C18.5493 18.5206 17.9954 19.2015 17.2217 19.4396L12.5882 20.8653C12.2049 20.9832 11.7951 20.9832 11.4118 20.8653L6.77825 19.4396C6.0046 19.2015 5.45071 18.5206 5.37516 17.7147L4.15374 4.68628C4.07125 3.8064 4.76346 3.04626 5.64719 3.04626Z'
+			d='M18.9999 14.4999V4.49994M18.9999 4.49994L21.9999 7.49994M18.9999 4.49994L15.9999 7.49994M4.5 18.9999H18.5M4.5 14.4999H14M4.5 9.99994H11M4.5 5.49994H8'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'
 		/>
 	</svg>
 );
-export default SvgCss;
+export default SvgSortUp;
