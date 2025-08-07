@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import * as Icons from '@tokens-studio/assets'
+import * as Icons from '@tokens-studio/icons-v2'
 
 function App() {
   const [size, setSize] = useState(16)
