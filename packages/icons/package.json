@@ -1,7 +1,7 @@
 {
 	"private": false,
-	"name": "@tokens-studio/icons",
-	"version": "0.1.6",
+	"name": "@tokens-studio/icons-v2",
+	"version": "0.0.2",
 	"description": "Tokens Studio: Internal icon library",
 	"author": "jan@hyma.io",
 	"type": "module",
@@ -33,7 +33,8 @@
 		"lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:types",
 		"lint:eslint": "eslint .",
 		"lint:prettier": "prettier . --check",
-		"lint:types": "tsc --noEmit"
+		"lint:types": "tsc --noEmit",
+		"release:canary": "npm publish --tag canary"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"

@@ -11,24 +11,18 @@ const SvgUser = ({
 	<svg
 		width={props.width || 16}
 		height={props.height || 16}
-		viewBox='0 0 16 16'
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M3.33325 13.3333V12.6667C3.33325 10.0893 5.42259 8 7.99992 8C10.5773 8 12.6666 10.0893 12.6666 12.6667V13.3333'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M7.99992 8.00008C9.47265 8.00008 10.6666 6.80615 10.6666 5.33341C10.6666 3.86065 9.47265 2.66675 7.99992 2.66675C6.52716 2.66675 5.33325 3.86065 5.33325 5.33341C5.33325 6.80615 6.52716 8.00008 7.99992 8.00008Z'
+			d='M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

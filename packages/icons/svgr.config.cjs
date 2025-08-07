@@ -57,9 +57,9 @@ module.exports = {
 		width: '{props.width || 16}',
 		height: '{props.height || 16}',
 		strokeWidth:
-			'{props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}',
+			'{props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}',
 		preserveAspectRatio: 'xMidYMid meet',
-		viewBox: '0 0 16 16',
+		viewBox: '0 0 24 24',
 	},
 	indexTemplate,
 };

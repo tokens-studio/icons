@@ -11,42 +11,18 @@ const SvgGlobe = ({
 	<svg
 		width={props.width || 16}
 		height={props.height || 16}
-		viewBox='0 0 16 16'
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M8.00004 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8.00004C14.6667 4.31814 11.6819 1.33337 8.00004 1.33337C4.31814 1.33337 1.33337 4.31814 1.33337 8.00004C1.33337 11.6819 4.31814 14.6667 8.00004 14.6667Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M1.66663 8.33337L5.33329 9.66671L4.66663 12L5.33329 14'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M11.3334 13.6667L11 12L9.33337 11.3334V9.00004L11.3334 8.33337L14.3334 8.66671'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M12.6667 3.66663L12.3333 4.66663L10 4.99996V6.99996L11.6667 6.33329H13L14.3333 6.99996'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M1.66663 7L3.33329 5.66667L4.99996 5.33333L6.33329 3.33333L5.66663 2'
+			d='M2 12H22M2 12C2 17.5228 6.47715 22 12 22M2 12C2 6.47715 6.47715 2 12 2M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22M12 2C9.49872 4.73835 8.07725 8.29203 8 12C8.07725 15.708 9.49872 19.2616 12 22'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

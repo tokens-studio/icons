@@ -11,42 +11,18 @@ const SvgRocket = ({
 	<svg
 		width={props.width || 16}
 		height={props.height || 16}
-		viewBox='0 0 16 16'
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M10.7076 6.93579L9.33337 11.3333H6.66671L5.29247 6.93579C4.90061 5.68181 5.14949 4.31537 5.95829 3.28009L7.68484 1.07012C7.84497 0.865135 8.15511 0.865135 8.31524 1.07012L10.0418 3.28009C10.8506 4.31537 11.0994 5.68181 10.7076 6.93579Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M6.66663 13.3334C6.66663 14.6667 7.99996 15.3334 7.99996 15.3334C7.99996 15.3334 9.33329 14.6667 9.33329 13.3334'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M5.66661 8.33337C3.33328 10 4.66661 12.6667 4.66661 12.6667L6.66661 11.3334'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M10.6208 8.33337C12.9542 10 11.6208 12.6667 11.6208 12.6667L9.62085 11.3334'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M7.99996 7.33329C7.26356 7.33329 6.66663 6.73636 6.66663 5.99996C6.66663 5.26358 7.26356 4.66663 7.99996 4.66663C8.73636 4.66663 9.33329 5.26358 9.33329 5.99996C9.33329 6.73636 8.73636 7.33329 7.99996 7.33329Z'
+			d='M12 15L9 12M12 15C13.3968 14.4687 14.7369 13.7987 16 13M12 15V20C12 20 15.03 19.45 16 18C17.08 16.38 16 13 16 13M9 12C9.53214 10.6194 10.2022 9.29607 11 8.05C12.1652 6.18699 13.7876 4.65305 15.713 3.5941C17.6384 2.53514 19.8027 1.98637 22 2C22 4.72 21.22 9.5 16 13M9 12H4C4 12 4.55 8.97 6 8C7.62 6.92 11 8 11 8M4.5 16.5C3 17.76 2.5 21.5 2.5 21.5C2.5 21.5 6.24 21 7.5 19.5C8.21 18.66 8.2 17.37 7.41 16.59C7.02131 16.219 6.50929 16.0046 5.97223 15.988C5.43516 15.9714 4.91088 16.1537 4.5 16.5Z'
 			stroke='currentColor'
 			strokeLinecap='round'
 			strokeLinejoin='round'

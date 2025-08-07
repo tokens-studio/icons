@@ -11,19 +11,21 @@ const SvgBold = ({
 	<svg
 		width={props.width || 16}
 		height={props.height || 16}
-		viewBox='0 0 16 16'
+		viewBox='0 0 24 24'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 1.5 * (16 / (Number(props.width) || 16))}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
 		preserveAspectRatio='xMidYMid meet'
 		aria-labelledby={titleId}
 		{...props}
 	>
 		{title ? <title id={titleId}>{title}</title> : null}
 		<path
-			d='M7.99998 7.77781H5.33331M7.99998 7.77781C7.99998 7.77781 10.2222 7.77781 10.2222 5.55556C10.2222 3.33336 7.99998 3.33334 7.99998 3.33334H5.73331C5.5124 3.33334 5.33331 3.51243 5.33331 3.73334V7.77781M7.99998 7.77781C7.99998 7.77781 10.6666 7.77781 10.6666 10.2222C10.6666 12.6667 7.99998 12.6667 7.99998 12.6667H5.73331C5.5124 12.6667 5.33331 12.4876 5.33331 12.2667V7.77781'
+			d='M6 12H14C16.2091 12 18 10.2091 18 8C18 5.79086 16.2091 4 14 4H6V12ZM6 12H15C17.2091 12 19 13.7909 19 16C19 18.2091 17.2091 20 15 20H6V12Z'
 			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 		/>
 	</svg>
 );

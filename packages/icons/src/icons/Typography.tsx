@@ -1,0 +1,32 @@
+import type { SVGProps } from 'react';
+interface SVGRProps {
+	title?: string;
+	titleId?: string;
+}
+const SvgTypography = ({
+	title,
+	titleId,
+	...props
+}: SVGProps<SVGSVGElement> & SVGRProps) => (
+	<svg
+		width={props.width || 16}
+		height={props.height || 16}
+		viewBox='0 0 24 24'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+		aria-hidden={!title}
+		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+		preserveAspectRatio='xMidYMid meet'
+		aria-labelledby={titleId}
+		{...props}
+	>
+		{title ? <title id={titleId}>{title}</title> : null}
+		<path
+			d='M4.00012 7C4.00012 6.06812 4.00012 5.60218 4.15236 5.23463C4.35535 4.74458 4.7447 4.35523 5.23476 4.15224C5.6023 4 6.06824 4 7.00012 4H17.0001C17.932 4 18.3979 4 18.7655 4.15224C19.2555 4.35523 19.6449 4.74458 19.8479 5.23463C20.0001 5.60218 20.0001 6.06812 20.0001 7M9.00012 20H15.0001M12.0001 4V20'
+			stroke='currentColor'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+		/>
+	</svg>
+);
+export default SvgTypography;
