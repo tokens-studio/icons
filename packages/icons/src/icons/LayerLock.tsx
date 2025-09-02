@@ -1,30 +1,30 @@
-import type { SVGProps } from 'react';
+import type { SVGProps } from "react";
 interface SVGRProps {
-	title?: string;
-	titleId?: string;
+  title?: string;
+  titleId?: string;
 }
 const SvgLayerLock = ({
-	title,
-	titleId,
-	...props
+  title,
+  titleId,
+  ...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
-	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 24 24'
-		fill='none'
-		xmlns='http://www.w3.org/2000/svg'
-		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
-		preserveAspectRatio='xMidYMid meet'
-		aria-labelledby={titleId}
-		{...props}
-	>
-		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11H8H7ZM16 8H15V11H16H17V8H16ZM8 11H9V8H8H7V11H8ZM12 4V5C13.6569 5 15 6.34315 15 8H16H17C17 5.23858 14.7614 3 12 3V4ZM12 4V3C9.23858 3 7 5.23858 7 8H8H9C9 6.34315 10.3431 5 12 5V4ZM7 11V12H17V11V10H7V11ZM19 13H18V18H19H20V13H19ZM17 20V19H7V20V21H17V20ZM5 18H6V13H5H4V18H5ZM7 20V19C6.44772 19 6 18.5523 6 18H5H4C4 19.6569 5.34315 21 7 21V20ZM19 18H18C18 18.5523 17.5523 19 17 19V20V21C18.6569 21 20 19.6569 20 18H19ZM17 11V12C17.5523 12 18 12.4477 18 13H19H20C20 11.3431 18.6569 10 17 10V11ZM7 11V10C5.34315 10 4 11.3431 4 13H5H6C6 12.4477 6.44772 12 7 12V11Z'
-			fill='currentColor'
-		/>
-	</svg>
+  <svg
+    width={props.width || 16}
+    height={props.height || 16}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden={!title}
+    strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+    preserveAspectRatio="xMidYMid meet"
+    aria-labelledby={titleId}
+    {...props}
+  >
+    {title ? <title id={titleId}>{title}</title> : null}
+    <path
+      d="M7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11H8H7ZM16 8H15V11H16H17V8H16ZM8 11H9V8H8H7V11H8ZM12 4V5C13.6569 5 15 6.34315 15 8H16H17C17 5.23858 14.7614 3 12 3V4ZM12 4V3C9.23858 3 7 5.23858 7 8H8H9C9 6.34315 10.3431 5 12 5V4ZM7 11V12H17V11V10H7V11ZM19 13H18V18H19H20V13H19ZM17 20V19H7V20V21H17V20ZM5 18H6V13H5H4V18H5ZM7 20V19C6.44772 19 6 18.5523 6 18H5H4C4 19.6569 5.34315 21 7 21V20ZM19 18H18C18 18.5523 17.5523 19 17 19V20V21C18.6569 21 20 19.6569 20 18H19ZM17 11V12C17.5523 12 18 12.4477 18 13H19H20C20 11.3431 18.6569 10 17 10V11ZM7 11V10C5.34315 10 4 11.3431 4 13H5H6C6 12.4477 6.44772 12 7 12V11Z"
+      fill="currentColor"
+    />
+  </svg>
 );
 export default SvgLayerLock;

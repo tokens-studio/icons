@@ -1,32 +1,32 @@
-import type { SVGProps } from 'react';
+import type { SVGProps } from "react";
 interface SVGRProps {
-	title?: string;
-	titleId?: string;
+  title?: string;
+  titleId?: string;
 }
 const SvgBorderRadius = ({
-	title,
-	titleId,
-	...props
+  title,
+  titleId,
+  ...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
-	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 24 24'
-		fill='none'
-		xmlns='http://www.w3.org/2000/svg'
-		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
-		preserveAspectRatio='xMidYMid meet'
-		aria-labelledby={titleId}
-		{...props}
-	>
-		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M4 19V17.8C4 13.3196 4 11.0794 4.87195 9.36808C5.63893 7.86278 6.86278 6.63893 8.36808 5.87195C10.0794 5 12.3196 5 16.8 5H20M9 19V14.8C9 13.1198 9 12.2798 9.32698 11.638C9.6146 11.0735 10.0735 10.6146 10.638 10.327C11.2798 10 12.1198 10 13.8 10H20M14 19V15H20'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-	</svg>
+  <svg
+    width={props.width || 16}
+    height={props.height || 16}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden={!title}
+    strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+    preserveAspectRatio="xMidYMid meet"
+    aria-labelledby={titleId}
+    {...props}
+  >
+    {title ? <title id={titleId}>{title}</title> : null}
+    <path
+      d="M4 19V17.8C4 13.3196 4 11.0794 4.87195 9.36808C5.63893 7.86278 6.86278 6.63893 8.36808 5.87195C10.0794 5 12.3196 5 16.8 5H20M9 19V14.8C9 13.1198 9 12.2798 9.32698 11.638C9.6146 11.0735 10.0735 10.6146 10.638 10.327C11.2798 10 12.1198 10 13.8 10H20M14 19V15H20"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
 );
 export default SvgBorderRadius;

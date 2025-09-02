@@ -1,32 +1,32 @@
-import type { SVGProps } from 'react';
+import type { SVGProps } from "react";
 interface SVGRProps {
-	title?: string;
-	titleId?: string;
+  title?: string;
+  titleId?: string;
 }
 const SvgNumberList = ({
-	title,
-	titleId,
-	...props
+  title,
+  titleId,
+  ...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
-	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 24 24'
-		fill='none'
-		xmlns='http://www.w3.org/2000/svg'
-		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
-		preserveAspectRatio='xMidYMid meet'
-		aria-labelledby={titleId}
-		{...props}
-	>
-		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M21 12.0001H10M21 6.00006H10M21 18.0001H10M3 15.0001H4.5C4.66643 14.9876 4.83357 14.9876 5 15.0001C5.2499 15.0422 5.48047 15.1612 5.65968 15.3404C5.83888 15.5196 5.95783 15.7502 6 16.0001C6.014 16.1764 6.014 16.3537 6 16.5301C6.011 16.6865 6.011 16.8436 6 17.0001C5.95783 17.25 5.83888 17.4805 5.65968 17.6597C5.48047 17.8389 5.2499 17.9579 5 18.0001C4.82361 18.0141 4.64639 18.0141 4.47 18.0001C4.31353 17.9891 4.15647 17.9891 4 18.0001C3.7501 18.0422 3.51953 18.1612 3.34032 18.3404C3.16112 18.5196 3.04217 18.7502 3 19.0001C2.986 19.1764 2.986 19.3537 3 19.5301V20.4301C3 20.7101 3 20.8501 3.09 20.9401C3.18 21.0301 3.32 21.0301 3.6 21.0301H6M3 3.00006H4.2C4.23977 2.99866 4.27941 3.00546 4.31644 3.02005C4.35347 3.03463 4.3871 3.05668 4.41524 3.08482C4.44338 3.11296 4.46543 3.14659 4.48001 3.18362C4.49459 3.22065 4.5014 3.26028 4.5 3.30006V9.00006M4.5 9.00006H3M4.5 9.00006H6'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-	</svg>
+  <svg
+    width={props.width || 16}
+    height={props.height || 16}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden={!title}
+    strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+    preserveAspectRatio="xMidYMid meet"
+    aria-labelledby={titleId}
+    {...props}
+  >
+    {title ? <title id={titleId}>{title}</title> : null}
+    <path
+      d="M21 12.0001H10M21 6.00006H10M21 18.0001H10M3 15.0001H4.5C4.66643 14.9876 4.83357 14.9876 5 15.0001C5.2499 15.0422 5.48047 15.1612 5.65968 15.3404C5.83888 15.5196 5.95783 15.7502 6 16.0001C6.014 16.1764 6.014 16.3537 6 16.5301C6.011 16.6865 6.011 16.8436 6 17.0001C5.95783 17.25 5.83888 17.4805 5.65968 17.6597C5.48047 17.8389 5.2499 17.9579 5 18.0001C4.82361 18.0141 4.64639 18.0141 4.47 18.0001C4.31353 17.9891 4.15647 17.9891 4 18.0001C3.7501 18.0422 3.51953 18.1612 3.34032 18.3404C3.16112 18.5196 3.04217 18.7502 3 19.0001C2.986 19.1764 2.986 19.3537 3 19.5301V20.4301C3 20.7101 3 20.8501 3.09 20.9401C3.18 21.0301 3.32 21.0301 3.6 21.0301H6M3 3.00006H4.2C4.23977 2.99866 4.27941 3.00546 4.31644 3.02005C4.35347 3.03463 4.3871 3.05668 4.41524 3.08482C4.44338 3.11296 4.46543 3.14659 4.48001 3.18362C4.49459 3.22065 4.5014 3.26028 4.5 3.30006V9.00006M4.5 9.00006H3M4.5 9.00006H6"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
 );
 export default SvgNumberList;

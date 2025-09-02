@@ -1,62 +1,62 @@
-import type { SVGProps } from 'react';
+import type { SVGProps } from "react";
 interface SVGRProps {
-	title?: string;
-	titleId?: string;
+  title?: string;
+  titleId?: string;
 }
 const SvgDragHorizontal = ({
-	title,
-	titleId,
-	...props
+  title,
+  titleId,
+  ...props
 }: SVGProps<SVGSVGElement> & SVGRProps) => (
-	<svg
-		width={props.width || 16}
-		height={props.height || 16}
-		viewBox='0 0 24 24'
-		fill='none'
-		xmlns='http://www.w3.org/2000/svg'
-		aria-hidden={!title}
-		strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
-		preserveAspectRatio='xMidYMid meet'
-		aria-labelledby={titleId}
-		{...props}
-	>
-		{title ? <title id={titleId}>{title}</title> : null}
-		<path
-			d='M6 7.5C6 6.94772 5.55228 6.5 5 6.5C4.44772 6.5 4 6.94772 4 7.5C4 8.05228 4.44772 8.5 5 8.5C5.55228 8.5 6 8.05228 6 7.5Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M13 7.5C13 6.94772 12.5523 6.5 12 6.5C11.4477 6.5 11 6.94772 11 7.5C11 8.05228 11.4477 8.5 12 8.5C12.5523 8.5 13 8.05228 13 7.5Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M20 7.5C20 6.94772 19.5523 6.5 19 6.5C18.4477 6.5 18 6.94772 18 7.5C18 8.05228 18.4477 8.5 19 8.5C19.5523 8.5 20 8.05228 20 7.5Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M6 16.5C6 15.9477 5.55228 15.5 5 15.5C4.44772 15.5 4 15.9477 4 16.5C4 17.0523 4.44772 17.5 5 17.5C5.55228 17.5 6 17.0523 6 16.5Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M13 16.5C13 15.9477 12.5523 15.5 12 15.5C11.4477 15.5 11 15.9477 11 16.5C11 17.0523 11.4477 17.5 12 17.5C12.5523 17.5 13 17.0523 13 16.5Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-		<path
-			d='M20 16.5C20 15.9477 19.5523 15.5 19 15.5C18.4477 15.5 18 15.9477 18 16.5C18 17.0523 18.4477 17.5 19 17.5C19.5523 17.5 20 17.0523 20 16.5Z'
-			stroke='currentColor'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-		/>
-	</svg>
+  <svg
+    width={props.width || 16}
+    height={props.height || 16}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden={!title}
+    strokeWidth={props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}
+    preserveAspectRatio="xMidYMid meet"
+    aria-labelledby={titleId}
+    {...props}
+  >
+    {title ? <title id={titleId}>{title}</title> : null}
+    <path
+      d="M6 7.5C6 6.94772 5.55228 6.5 5 6.5C4.44772 6.5 4 6.94772 4 7.5C4 8.05228 4.44772 8.5 5 8.5C5.55228 8.5 6 8.05228 6 7.5Z"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M13 7.5C13 6.94772 12.5523 6.5 12 6.5C11.4477 6.5 11 6.94772 11 7.5C11 8.05228 11.4477 8.5 12 8.5C12.5523 8.5 13 8.05228 13 7.5Z"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M20 7.5C20 6.94772 19.5523 6.5 19 6.5C18.4477 6.5 18 6.94772 18 7.5C18 8.05228 18.4477 8.5 19 8.5C19.5523 8.5 20 8.05228 20 7.5Z"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M6 16.5C6 15.9477 5.55228 15.5 5 15.5C4.44772 15.5 4 15.9477 4 16.5C4 17.0523 4.44772 17.5 5 17.5C5.55228 17.5 6 17.0523 6 16.5Z"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M13 16.5C13 15.9477 12.5523 15.5 12 15.5C11.4477 15.5 11 15.9477 11 16.5C11 17.0523 11.4477 17.5 12 17.5C12.5523 17.5 13 17.0523 13 16.5Z"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M20 16.5C20 15.9477 19.5523 15.5 19 15.5C18.4477 15.5 18 15.9477 18 16.5C18 17.0523 18.4477 17.5 19 17.5C19.5523 17.5 20 17.0523 20 16.5Z"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
 );
 export default SvgDragHorizontal;
