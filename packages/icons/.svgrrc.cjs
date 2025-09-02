@@ -1,3 +1,3 @@
 module.exports = {
-	template: require('./svgr-template.cjs').default,
+  template: require("./svgr-template.cjs").default,
 };

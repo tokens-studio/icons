@@ -1,6 +1,6 @@
 // svgr-template.js
 function defaultTemplate({ imports, componentName, props, jsx }, { tpl }) {
-	return tpl`
+  return tpl`
 	${imports};
 	import { SVGRProps } from '../types';
 	

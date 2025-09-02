@@ -1,4 +1,4 @@
 export interface SVGRProps {
-	title?: string;
-	titleId?: string;
+  title?: string;
+  titleId?: string;
 }
