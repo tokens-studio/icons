@@ -1,8 +1,8 @@
 class ArrowUp extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m0 0-7 7m7-7 7 7" /></svg>`;
-  }
+	connectedCallback() {
+		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m0 0-7 7m7-7 7 7" /></svg>`;
+	}
 }
 
-customElements.define("icon-arrowup", ArrowUp);
+customElements.define('icon-arrowup', ArrowUp);
 export default ArrowUp;

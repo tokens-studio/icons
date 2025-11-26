@@ -66,4 +66,3 @@ Before publishing, verify:
 - [ ] `dist/` folder contains all expected files
 - [ ] Version number is correct in `package.json`
 - [ ] Package name is correct (`@tokens-studio/icons-webcomponents`)
-

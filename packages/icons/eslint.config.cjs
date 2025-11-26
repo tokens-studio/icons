@@ -1,8 +1,8 @@
-const studioConfig = require("@tokens-studio/configs/eslint");
+const studioConfig = require('@tokens-studio/configs/eslint');
 
 module.exports = [
-  {
-    ignores: ["dist/"],
-  },
-  ...studioConfig,
+	{
+		ignores: ['dist/'],
+	},
+	...studioConfig,
 ];

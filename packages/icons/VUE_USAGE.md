@@ -14,17 +14,17 @@ npm install @tokens-studio/icons-v2
 
 ```vue
 <template>
-  <div>
-    <!-- Import registers the custom element automatically -->
-    <icon-user></icon-user>
-    <icon-swatchbook></icon-swatchbook>
-  </div>
+	<div>
+		<!-- Import registers the custom element automatically -->
+		<icon-user></icon-user>
+		<icon-swatchbook></icon-swatchbook>
+	</div>
 </template>
 
 <script setup>
 // Import to register the custom element
-import "@tokens-studio/icons-v2/User";
-import "@tokens-studio/icons-v2/SwatchBook";
+import '@tokens-studio/icons-v2/User';
+import '@tokens-studio/icons-v2/SwatchBook';
 </script>
 ```
 
@@ -42,7 +42,7 @@ Then use in any component:
 
 ```vue
 <template>
-  <icon-user></icon-user>
+	<icon-user></icon-user>
 </template>
 ```
 
@@ -50,17 +50,17 @@ Then use in any component:
 
 ```vue
 <template>
-  <component :is="iconName"></component>
+	<component :is="iconName"></component>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted } from 'vue';
 
-const iconName = ref("icon-user");
+const iconName = ref('icon-user');
 
 onMounted(async () => {
-  // Dynamically import icon
-  await import("@tokens-studio/icons-v2/User");
+	// Dynamically import icon
+	await import('@tokens-studio/icons-v2/User');
 });
 </script>
 ```
@@ -71,14 +71,14 @@ Icons use `currentColor` for stroke/fill, so you can style them with CSS:
 
 ```vue
 <template>
-  <icon-user class="my-icon"></icon-user>
+	<icon-user class="my-icon"></icon-user>
 </template>
 
 <style scoped>
 .my-icon {
-  color: #3b82f6; /* Blue */
-  width: 32px;
-  height: 32px;
+	color: #3b82f6; /* Blue */
+	width: 32px;
+	height: 32px;
 }
 </style>
 ```
@@ -90,11 +90,11 @@ If using TypeScript, you may need to declare the custom elements:
 ```typescript
 // types/icon-elements.d.ts
 declare namespace JSX {
-  interface IntrinsicElements {
-    "icon-user": any;
-    "icon-swatchbook": any;
-    // ... add other icons as needed
-  }
+	interface IntrinsicElements {
+		'icon-user': any;
+		'icon-swatchbook': any;
+		// ... add other icons as needed
+	}
 }
 ```
 
@@ -103,11 +103,11 @@ Or use a more generic approach:
 ```typescript
 // types/icon-elements.d.ts
 declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      [key: `icon-${string}`]: any;
-    }
-  }
+	namespace JSX {
+		interface IntrinsicElements {
+			[key: `icon-${string}`]: any;
+		}
+	}
 }
 ```
 
@@ -115,28 +115,28 @@ declare global {
 
 ```vue
 <template>
-  <div class="icon-grid">
-    <icon-user v-for="i in 5" :key="i"></icon-user>
-  </div>
+	<div class="icon-grid">
+		<icon-user v-for="i in 5" :key="i"></icon-user>
+	</div>
 </template>
 
 <script setup lang="ts">
-import "@tokens-studio/icons-v2/User";
+import '@tokens-studio/icons-v2/User';
 
 // Icons are automatically available as custom elements
 </script>
 
 <style scoped>
 .icon-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
 }
 
 .icon-grid icon-user {
-  color: #6366f1;
-  width: 24px;
-  height: 24px;
+	color: #6366f1;
+	width: 24px;
+	height: 24px;
 }
 </style>
 ```
