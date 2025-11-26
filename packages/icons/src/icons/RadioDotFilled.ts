@@ -1,6 +1,6 @@
 class RadioDotFilled extends HTMLElement {
 	connectedCallback() {
-		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path fill="currentColor" d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12" /></svg>`;
+		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path fill="currentColor" d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12" /></svg>`;
 	}
 }
 

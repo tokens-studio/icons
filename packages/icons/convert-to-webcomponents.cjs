@@ -50,8 +50,6 @@ async function convertToWebComponents() {
 
 		let svgHtml = svgMatch[0]
 			// Replace JSX expressions with static values
-			.replace(/\{props\.width \|\| 16\}/g, '24')
-			.replace(/\{props\.height \|\| 16\}/g, '24')
 			.replace(
 				/\{props\.strokeWidth \|\| 2 \* \(16 \/ \(Number\(props\.width\) \|\| 16\)\)\}/g,
 				'2',
@@ -77,6 +75,9 @@ async function convertToWebComponents() {
 			// Clean up any remaining JSX expressions (but preserve numeric values)
 			.replace(/\{(\d+)\}/g, '$1')
 			.replace(/\{[^}]*\}/g, '')
+			// Remove width and height attributes to allow flexible sizing via CSS
+			.replace(/\s+width=["']?\d+["']?/g, '')
+			.replace(/\s+height=["']?\d+["']?/g, '')
 			// Normalize whitespace
 			.replace(/>\s+</g, '><')
 			.trim();
