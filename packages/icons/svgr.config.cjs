@@ -1,65 +1,33 @@
-const path = require('path');
-const template = require('./svgr-template.cjs');
+const path = require("path");
 
-// Custom index template to handle file endings as required
+// Custom index template
 function indexTemplate(filePaths) {
-	const exportEntries = filePaths
-		.map(({ path: filePath }) => {
-			const fileName = filePath.split(path.sep).pop().replace('.tsx', '.js');
-			const componentName = fileName.replace('.js', '');
-			return `export { default as ${componentName} } from './${fileName}';`;
-		})
-		.join('\n');
-
-	return exportEntries;
+  const exportEntries = filePaths
+    .map(({ path: filePath }) => {
+      const fileName = filePath.split(path.sep).pop().replace(".ts", ".js");
+      const componentName = fileName.replace(".js", "");
+      return `export { default as ${componentName} } from './${fileName}';`;
+    })
+    .join("\n");
+  return exportEntries;
 }
 
-const removeStrokeWidth = (ast) => {
-	if (ast.children) {
-		ast.children.forEach((child) => {
-			if (child.name === 'path') {
-				delete child.attributes['stroke-width'];
-			}
-			if (child.children) {
-				removeStrokeWidth(child);
-			}
-		});
-	}
-};
-
 module.exports = {
-	template,
-	titleProp: true,
-	typescript: true,
-	prettier: false,
-	outDir: 'src/icons',
-	jsxRuntime: 'automatic',
-	replaceAttrValues: {
-		'#000': 'currentColor',
-		'#000000': 'currentColor',
-		black: 'currentColor',
-	},
-	svgoConfig: {
-		plugins: [
-			{
-				name: 'customPlugin',
-				params: {
-					paramName: 'paramValue',
-				},
-				fn: (ast) => {
-					removeStrokeWidth(ast);
-				},
-			},
-		],
-	},
-	svgProps: {
-		'aria-hidden': '{!title}',
-		width: '{props.width || 16}',
-		height: '{props.height || 16}',
-		strokeWidth:
-			'{props.strokeWidth || 2 * (16 / (Number(props.width) || 16))}',
-		preserveAspectRatio: 'xMidYMid meet',
-		viewBox: '0 0 24 24',
-	},
-	indexTemplate,
+  typescript: true,
+  prettier: false,
+  outDir: "src/icons",
+  // Use .ts extension instead of .tsx since we're generating web components, not React
+  ext: "ts",
+  replaceAttrValues: {
+    "#000": "currentColor",
+    "#000000": "currentColor",
+    black: "currentColor",
+  },
+  svgProps: {
+    width: "24",
+    height: "24",
+    preserveAspectRatio: "xMidYMid meet",
+    viewBox: "0 0 24 24",
+  },
+  indexTemplate,
 };

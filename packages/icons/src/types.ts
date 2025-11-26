@@ -1,4 +1,2 @@
-export interface SVGRProps {
-	title?: string;
-	titleId?: string;
-}
+// Web components don't need props interface
+// Icons are self-contained web components
