@@ -1,5 +1,8 @@
 class Clock extends HTMLElement {
 	connectedCallback() {
+		this.style.display = this.style.display || 'inline-block';
+		this.style.width = this.style.width || '16px';
+		this.style.height = this.style.height || '16px';
 		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2m6-2c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10" /></svg>`;
 	}
 }

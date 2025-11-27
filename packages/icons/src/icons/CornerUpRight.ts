@@ -1,5 +1,8 @@
 class CornerUpRight extends HTMLElement {
 	connectedCallback() {
+		this.style.display = this.style.display || 'inline-block';
+		this.style.width = this.style.width || '16px';
+		this.style.height = this.style.height || '16px';
 		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 20v-1.4c0-3.36 0-5.04.654-6.324a6 6 0 0 1 2.622-2.622C8.56 9 10.24 9 13.6 9H20m0 0-5 5m5-5-5-5" /></svg>`;
 	}
 }

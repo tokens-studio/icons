@@ -1,5 +1,8 @@
 class Map01 extends HTMLElement {
 	connectedCallback() {
+		this.style.display = this.style.display || 'inline-block';
+		this.style.width = this.style.width || '16px';
+		this.style.height = this.style.height || '16px';
 		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18-7 4V6l7-4m0 16 7 4m-7-4V2m7 20 6-4V2l-6 4m0 16V6m0 0L9 2" /></svg>`;
 	}
 }

@@ -1,5 +1,8 @@
 class Array extends HTMLElement {
 	connectedCallback() {
+		this.style.display = this.style.display || 'inline-block';
+		this.style.width = this.style.width || '16px';
+		this.style.height = this.style.height || '16px';
 		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 7.334h.84c.737 0 1.334.596 1.334 1.333V11l1.333 1-1.334 1v2.333c0 .737-.597 1.334-1.333 1.334H14m-4-9.333h-.84c-.737 0-1.334.596-1.334 1.333V11l-1.333 1 1.333 1v2.333c0 .737.598 1.334 1.334 1.334H10M7.8 21h8.4c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.311-1.311C21 18.72 21 17.88 21 16.2V7.8c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311C18.72 3 17.88 3 16.2 3H7.8c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.311 1.311C3 5.28 3 6.12 3 7.8v8.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C5.28 21 6.12 21 7.8 21" /></svg>`;
 	}
 }

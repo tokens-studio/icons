@@ -1,5 +1,8 @@
 class Style extends HTMLElement {
 	connectedCallback() {
+		this.style.display = this.style.display || 'inline-block';
+		this.style.width = this.style.width || '16px';
+		this.style.height = this.style.height || '16px';
 		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path stroke="currentColor" stroke-width="2" d="M10 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM10 17a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM20 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM20 17a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>`;
 	}
 }

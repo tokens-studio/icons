@@ -93,6 +93,9 @@ async function convertToWebComponents() {
 		// Generate web component
 		const webComponent = `class ${componentName} extends HTMLElement {
 	connectedCallback() {
+		this.style.display = this.style.display || 'inline-block';
+		this.style.width = this.style.width || '16px';
+		this.style.height = this.style.height || '16px';
 		this.innerHTML = \`${escaped}\`;
 	}
 }

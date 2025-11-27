@@ -1,5 +1,8 @@
 class FolderFilled extends HTMLElement {
 	connectedCallback() {
+		this.style.display = this.style.display || 'inline-block';
+		this.style.width = this.style.width || '16px';
+		this.style.height = this.style.height || '16px';
 		this.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" ><path fill="currentColor" d="M9.022 2c.646 0 1.207-.013 1.72.164.42.145.804.381 1.121.692.388.38.628.888.916 1.465l.34.679H18c.683 0 1.257-.001 1.724.037.478.039.933.125 1.365.345a3.5 3.5 0 0 1 1.53 1.529c.22.432.305.887.344 1.365C23 8.743 23 9.316 23 10v7c0 .683.001 1.256-.037 1.723-.04.479-.125.934-.345 1.366a3.5 3.5 0 0 1-1.53 1.53c-.43.22-.886.305-1.364.344C19.257 22 18.684 22 18 22H6c-.683 0-1.257 0-1.724-.037-.478-.04-.933-.124-1.365-.344a3.5 3.5 0 0 1-1.53-1.53c-.22-.432-.305-.887-.344-1.366C1 18.256 1 17.683 1 17V5.982c0-.451.003-.846.03-1.178.033-.395.104-.788.297-1.167a3 3 0 0 1 1.31-1.31c.379-.193.773-.265 1.168-.297C4.188 2 4.657 2 5.2 2z" /></svg>`;
 	}
 }

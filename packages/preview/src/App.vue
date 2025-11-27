@@ -67,7 +67,7 @@
       >
         <component
           :is="icon.tagName"
-          :style="{ width: size + 'px' }"
+          :style="{ width: size + 'px', height: size + 'px' }"
         />
         <span
           style="
